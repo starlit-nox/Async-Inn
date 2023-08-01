@@ -4,7 +4,7 @@ Kaydee Kelly
 
 8/01/2023
 
-Image goes here
+![Aysnc Inn](https://cdn.discordapp.com/attachments/442113342501552147/1136008994398412901/image.png)
 
 Rubric
 Part 1
