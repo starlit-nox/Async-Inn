@@ -4,6 +4,10 @@ Kaydee Kelly
 
 8/01/2023
 
+Description
+
+Async Hotels is a hotel chain seeking to upgrade its operations with a Management System. This program is made in C# and uses SQL servers to manage rooms, amenities, locations, and other data. The goal is to store their data in a relational database and maintain data integrity during updates. This overview includes an ERD diagram/blueprint to outline the constructor.
+
 ![Aysnc Inn](https://cdn.discordapp.com/attachments/442113342501552147/1136008994398412901/image.png)
 
 Rubric
