@@ -5,6 +5,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Async_Inn.Controllers
 {
+    /*
+     * app.get("/", getData);
+     * app.post("/", updloadData);
+     */
+    //https://localhost:1234/api/Hotels/
+    //https://asyncinn.com/api/Hotels
     [Route("api/[controller]")]
     [ApiController]
     public class HotelsController : ControllerBase
@@ -24,7 +30,8 @@ namespace Async_Inn.Controllers
             {
                 return NotFound();
             }
-            return await _context.Hotel.ToListAsync();
+            return await _context.Hotel.
+                Where(h => h.City != "Memphis").ToListAsync();//ToListAsync();
         }
 
         // GET: api/Hotels/5
@@ -54,11 +61,12 @@ namespace Async_Inn.Controllers
             {
                 return BadRequest();
             }
-
+            //update model with new hotel data
             _context.Entry(hotel).State = EntityState.Modified;
 
             try
             {
+                //save data changes
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)

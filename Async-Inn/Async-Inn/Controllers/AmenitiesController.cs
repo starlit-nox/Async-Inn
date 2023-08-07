@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Async_Inn.Controllers
 {
+    //https://localhost:123/api/Amenities
     [Route("api/[controller]")]
     [ApiController]
     public class AmenitiesController : ControllerBase

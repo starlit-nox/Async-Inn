@@ -24,7 +24,13 @@ namespace Async_Inn.Controllers
             {
                 return NotFound();
             }
-            return await _context.Room.ToListAsync();
+            //return await _context.Room.Include(room => room.HotelRooms)
+            //    .ThenInclude(hotelroom => hotelroom.Hotel)
+            //    .ToListAsync();
+            return await _context.Room
+                .Include(r => r.HotelRooms)
+                .ThenInclude(hr => hr.Hotel)
+                .ToListAsync();
         }
 
         // GET: api/Rooms/5
