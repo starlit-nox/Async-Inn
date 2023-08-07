@@ -1,4 +1,5 @@
 using Async_Inn.Data;
+using Async_Inn.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace Async_Inn
@@ -9,32 +10,41 @@ namespace Async_Inn
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container. 
+            // Add services to the container.
             builder.Services.AddControllersWithViews();
 
-            // todo
-            // builder.Services.addContext
-
+            /* TODO
+            builder.Services.addContext
+             */
             builder.Services.AddDbContext<AsyncInnContext>(options =>
-            options.UseSqlServer(
-                builder.Configuration
-                .GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(
+                    builder.Configuration
+                    .GetConnectionString("DefaultConnection")));
+
+            builder.Services.AddTransient<IHotel, HotelService>();
 
             var app = builder.Build();
 
-            // app.MapGet("/", () => "Hello World!");
+            //app.MapGet("/", () => "Hello World!");
 
-            app.UseHttpsRedirection(); // middleware
-            app.UseStaticFiles(); // middleware
-            app.UseRouting(); // middleware
-            app.UseAuthentication(); // middleware
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+
+            app.UseRouting();
+
+            app.UseAuthorization();
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controler=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Home}/{action=Index}/{id?}");
 
-            // https://localhost:44391/Home/Hotel/CheckIn/1
+            //https://localhost:44391/Hotel/CheckIn/
 
+            /*
+             * 
+             * 
+            
+             */
 
             app.Run();
         }
