@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Async_Inn.Controllers
 {
-    // https://localhost:123/api/rooms
+    // https://localhost:7252/api/rooms
     [Route("api/[controller]")]
     [ApiController]
     public class RoomsController : ControllerBase
@@ -25,7 +25,8 @@ namespace Async_Inn.Controllers
             {
                 return NotFound();
             }
-            return await _context.Room.ToListAsync();
+            return await _context.Room.Include(room => room.HotelRoom).
+                ToListAsync();
         }
 
         // get: api/rooms/5
