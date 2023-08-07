@@ -12,5 +12,9 @@ namespace Async_Inn.Models
 
         [Required]
         public int AmenityID { get; set; }
+
+        public Room Room { get; set; }
+
+        public Amenity Amenity { get; set; }
     }
 }

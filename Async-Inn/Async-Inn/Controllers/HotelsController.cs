@@ -31,7 +31,7 @@ namespace Async_Inn.Controllers
                 return NotFound();
             }
             return await _context.Hotel.
-                Where(h => h.City != "Memphis").ToListAsync();//ToListAsync();
+                Where(h => h.City == "Memphis").ToListAsync();//ToListAsync();
         }
 
         // GET: api/Hotels/5
