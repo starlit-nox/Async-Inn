@@ -23,3 +23,4 @@ Part 1
 No late submissions will be accepted. Submit your diagram before the posted due date.
 
 Dependency Injection & Repository Design Pattern-Lab 13 Time: 4 Hours
+Navigation Properties & Routing-Lab14 Time: 5 Hours
