@@ -21,3 +21,5 @@ Part 1
 0 points: No Submission.
 
 No late submissions will be accepted. Submit your diagram before the posted due date.
+
+Dependency Injection & Repository Design Pattern-Lab 13 Time: 4 Hours
