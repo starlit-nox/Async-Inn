@@ -1,5 +1,7 @@
 using Async_Inn.Data;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace Async_Inn
 {
@@ -14,6 +16,9 @@ namespace Async_Inn
             {
                 options.JsonSerializerOptions.ReferenceHandler
                 = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+
+                options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+                options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
             });
 
             /* TODO
