@@ -31,6 +31,19 @@ namespace Async_Inn
 
             var app = builder.Build();
 
+            // this is for swagger doccumentations
+
+            app.UseSwagger(options =>
+            {
+                options.RouteTemplate = "/api/{documentName}/swagger.json";
+            });
+
+            app.UseSwaggerUI(options =>
+            {
+                options.SwaggerEndpoint("api/v20/swagger.json",
+                    "Async Inn");
+            });
+
             //app.MapGet("/", () => "Hello World!");
 
             app.UseHttpsRedirection();
