@@ -24,12 +24,18 @@ namespace Async_Inn
             /* TODO
             builder.Services.addContext
              */
+
             builder.Services.AddDbContext<AsyncInnContext>(options =>
                 options.UseSqlServer(
                     builder.Configuration
                     .GetConnectionString("DefaultConnection")));
 
             var app = builder.Build();
+
+            // lab 17 
+
+            // builder.Services.AddDefaultIdentity<ApplicationUser>()
+            //   .AddEntityFrameworkStores<ApplicationDbContext>();
 
             // this is for swagger doccumentations
 
