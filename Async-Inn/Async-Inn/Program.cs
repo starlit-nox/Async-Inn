@@ -1,4 +1,5 @@
 using Async_Inn.Data;
+using Async_Inn.Services;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -11,15 +12,8 @@ namespace Async_Inn
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-            builder.Services.AddControllersWithViews().AddJsonOptions(options =>
-            {
-                options.JsonSerializerOptions.ReferenceHandler
-                = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
-
-                options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
-                options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
-            });
+            // Add services to the container. 
+            builder.Services.AddControllersWithViews();
 
             /* TODO
             builder.Services.addContext
@@ -30,50 +24,21 @@ namespace Async_Inn
                     builder.Configuration
                     .GetConnectionString("DefaultConnection")));
 
+            builder.Services.AddTransient<IHotel, HotelService>();
+
             var app = builder.Build();
 
-            // lab 17 
+            // app.MapGet("/", () => "Hello World!");
 
-            // builder.Services.AddDefaultIdentity<ApplicationUser>()
-            //   .AddEntityFrameworkStores<ApplicationDbContext>();
-
-            // this is for swagger doccumentations
-
-            app.UseSwagger(options =>
-            {
-                options.RouteTemplate = "/api/{documentName}/swagger.json";
-            });
-
-            app.UseSwaggerUI(options =>
-            {
-                options.SwaggerEndpoint("api/v20/swagger.json",
-                    "Async Inn");
-            });
-
-            //app.MapGet("/", () => "Hello World!");
-
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
-
-            app.UseRouting();
-
+            app.UseAuthorization();
             app.UseAuthorization();
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controler=Home}/{action=Index}/{id?}");
 
-            //https://localhost:5152/Hotel/CheckIn/
-            //https://website/Hotel/CheckOut
-            //https://website/Hotel/
-            // http://localhost:5152
-            // https://localhost:7252
+            // https://localhost:44391/Home/Hotel/CheckIn/1
 
-            /*
-             * 
-             * 
-            
-             */
 
             app.Run();
         }
