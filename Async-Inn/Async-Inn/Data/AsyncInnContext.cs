@@ -39,5 +39,7 @@ namespace Async_Inn.Data
         public DbSet<Async_Inn.Models.Room> Room { get; set; } = default!;
         public DbSet<Async_Inn.Models.Amenity> Amenity { get; set; } = default!;
         public object RoomAmenity { get; internal set; }
+        public DbSet<Async_Inn.Models.HotelRoom> HotelRoom { get; set; } = default!;
+        public DbSet<Async_Inn.Models.RoomAmenity> RoomAmenity_1 { get; set; } = default!;
     }
 }
