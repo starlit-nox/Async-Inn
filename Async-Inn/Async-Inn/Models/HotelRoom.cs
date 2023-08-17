@@ -12,5 +12,10 @@ namespace Async_Inn.Models
         public int HotelID { get; set; }
         [Required]
         public double Price { get; set; }
+
+        //nagivation propertiies
+
+        public Hotel Hotel { get; set; }
+        public Room Room { get; set; }
     }
 }

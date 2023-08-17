@@ -1,6 +1,8 @@
 using Async_Inn.Data;
 using Async_Inn.Services;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace Async_Inn
 {
@@ -10,12 +12,13 @@ namespace Async_Inn
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            // Add services to the container. 
             builder.Services.AddControllersWithViews();
 
             /* TODO
             builder.Services.addContext
              */
+
             builder.Services.AddDbContext<AsyncInnContext>(options =>
                 options.UseSqlServer(
                     builder.Configuration
@@ -25,26 +28,17 @@ namespace Async_Inn
 
             var app = builder.Build();
 
-            //app.MapGet("/", () => "Hello World!");
+            // app.MapGet("/", () => "Hello World!");
 
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
-
-            app.UseRouting();
-
+            app.UseAuthorization();
             app.UseAuthorization();
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controler=Home}/{action=Index}/{id?}");
 
-            //https://localhost:44391/Hotel/CheckIn/
+            // https://localhost:44391/Home/Hotel/CheckIn/1
 
-            /*
-             * 
-             * 
-            
-             */
 
             app.Run();
         }

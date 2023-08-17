@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Async_Inn.Controllers
 {
-    // https://localhost:123/api/amenities
+    //https://localhost:123/api/Amenities
     [Route("api/[controller]")]
     [ApiController]
     public class AmenitiesController : ControllerBase
@@ -17,7 +17,7 @@ namespace Async_Inn.Controllers
             _context = context;
         }
 
-        // get: api/amenities
+        // GET: api/Amenities
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Amenity>>> GetAmenity()
         {
@@ -28,7 +28,7 @@ namespace Async_Inn.Controllers
             return await _context.Amenity.ToListAsync();
         }
 
-        // get: api/amenities/5
+        // GET: api/Amenities/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Amenity>> GetAmenity(int id)
         {
@@ -46,8 +46,8 @@ namespace Async_Inn.Controllers
             return amenity;
         }
 
-        // put: api/amenities/5
-        // to protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // PUT: api/Amenities/5
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAmenity(int id, Amenity amenity)
         {
@@ -77,14 +77,14 @@ namespace Async_Inn.Controllers
             return NoContent();
         }
 
-        // post: api/amenities
-        // to protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // POST: api/Amenities
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Amenity>> PostAmenity(Amenity amenity)
         {
             if (_context.Amenity == null)
             {
-                return Problem("Entity set 'AsyncInnContext.Amenity' is null.");
+                return Problem("Entity set 'AsyncInnContext.Amenity'  is null.");
             }
             _context.Amenity.Add(amenity);
             await _context.SaveChangesAsync();
@@ -92,7 +92,7 @@ namespace Async_Inn.Controllers
             return CreatedAtAction("GetAmenity", new { id = amenity.ID }, amenity);
         }
 
-        // delete: api/amenities/5
+        // DELETE: api/Amenities/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAmenity(int id)
         {

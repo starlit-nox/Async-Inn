@@ -12,7 +12,7 @@ namespace Async_Inn.Migrations
 {
     [DbContext(typeof(AsyncInnContext))]
     [Migration("20230726203926_initial")]
-    partial class initial
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
