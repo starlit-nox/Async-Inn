@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "NwidTu+XRi75/vep6fc7CYPgtOw/kYPBpARUY9AdP7a9fzu7px965CnLLL8II32rnXA516Ja1Dful7Eg5hu4nw==",
+  "dgSpecHash": "rZJj+EIFWQzOh0FMS4GpErffmcVFUeu7oulsGqo4lYpClX3tWmqK1llkWBdUwbEZrjhrsDM1Gx3z5zR1LL/Xvw==",
   "success": true,
   "projectFilePath": "C:\\Users\\kdkel\\OneDrive\\Documents\\GitHub\\Async-Inn\\Async-Inn\\Async-Inn\\Async-Inn.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\kdkel\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
+    "C:\\Users\\kdkel\\.nuget\\packages\\azure.core\\1.33.0\\azure.core.1.33.0.nupkg.sha512",
     "C:\\Users\\kdkel\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\kdkel\\.nuget\\packages\\azure.storage.blobs\\12.17.0\\azure.storage.blobs.12.17.0.nupkg.sha512",
+    "C:\\Users\\kdkel\\.nuget\\packages\\azure.storage.common\\12.16.0\\azure.storage.common.12.16.0.nupkg.sha512",
     "C:\\Users\\kdkel\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\kdkel\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\kdkel\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",
@@ -182,6 +184,7 @@
     "C:\\Users\\kdkel\\.nuget\\packages\\system.io.compression.zipfile\\4.3.0\\system.io.compression.zipfile.4.3.0.nupkg.sha512",
     "C:\\Users\\kdkel\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\kdkel\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\kdkel\\.nuget\\packages\\system.io.hashing\\6.0.0\\system.io.hashing.6.0.0.nupkg.sha512",
     "C:\\Users\\kdkel\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
     "C:\\Users\\kdkel\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\kdkel\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
