@@ -9,53 +9,53 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Async_Inn
 build_property.RootNamespace = Async_Inn
-build_property.ProjectDir = C:\Users\kdkel\OneDrive\Documents\GitHub\Async-Inn\Async-Inn\Async-Inn\
+build_property.ProjectDir = c:\Users\kdkel\OneDrive\Documents\GitHub\Async-Inn\Async-Inn\Async-Inn\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\kdkel\OneDrive\Documents\GitHub\Async-Inn\Async-Inn\Async-Inn
+build_property.MSBuildProjectDirectory = c:\Users\kdkel\OneDrive\Documents\GitHub\Async-Inn\Async-Inn\Async-Inn
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/kdkel/OneDrive/Documents/GitHub/Async-Inn/Async-Inn/Async-Inn/Views/HotelRooms/Create.cshtml]
+[c:/Users/kdkel/OneDrive/Documents/GitHub/Async-Inn/Async-Inn/Async-Inn/Views/HotelRooms/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxSb29tc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdkel/OneDrive/Documents/GitHub/Async-Inn/Async-Inn/Async-Inn/Views/HotelRooms/Delete.cshtml]
+[c:/Users/kdkel/OneDrive/Documents/GitHub/Async-Inn/Async-Inn/Async-Inn/Views/HotelRooms/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxSb29tc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdkel/OneDrive/Documents/GitHub/Async-Inn/Async-Inn/Async-Inn/Views/HotelRooms/Details.cshtml]
+[c:/Users/kdkel/OneDrive/Documents/GitHub/Async-Inn/Async-Inn/Async-Inn/Views/HotelRooms/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxSb29tc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdkel/OneDrive/Documents/GitHub/Async-Inn/Async-Inn/Async-Inn/Views/HotelRooms/Edit.cshtml]
+[c:/Users/kdkel/OneDrive/Documents/GitHub/Async-Inn/Async-Inn/Async-Inn/Views/HotelRooms/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxSb29tc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdkel/OneDrive/Documents/GitHub/Async-Inn/Async-Inn/Async-Inn/Views/HotelRooms/Index.cshtml]
+[c:/Users/kdkel/OneDrive/Documents/GitHub/Async-Inn/Async-Inn/Async-Inn/Views/HotelRooms/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG90ZWxSb29tc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdkel/OneDrive/Documents/GitHub/Async-Inn/Async-Inn/Async-Inn/Views/RoomAmenities/Create.cshtml]
+[c:/Users/kdkel/OneDrive/Documents/GitHub/Async-Inn/Async-Inn/Async-Inn/Views/RoomAmenities/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbUFtZW5pdGllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdkel/OneDrive/Documents/GitHub/Async-Inn/Async-Inn/Async-Inn/Views/RoomAmenities/Delete.cshtml]
+[c:/Users/kdkel/OneDrive/Documents/GitHub/Async-Inn/Async-Inn/Async-Inn/Views/RoomAmenities/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbUFtZW5pdGllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdkel/OneDrive/Documents/GitHub/Async-Inn/Async-Inn/Async-Inn/Views/RoomAmenities/Details.cshtml]
+[c:/Users/kdkel/OneDrive/Documents/GitHub/Async-Inn/Async-Inn/Async-Inn/Views/RoomAmenities/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbUFtZW5pdGllc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdkel/OneDrive/Documents/GitHub/Async-Inn/Async-Inn/Async-Inn/Views/RoomAmenities/Edit.cshtml]
+[c:/Users/kdkel/OneDrive/Documents/GitHub/Async-Inn/Async-Inn/Async-Inn/Views/RoomAmenities/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbUFtZW5pdGllc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdkel/OneDrive/Documents/GitHub/Async-Inn/Async-Inn/Async-Inn/Views/RoomAmenities/Index.cshtml]
+[c:/Users/kdkel/OneDrive/Documents/GitHub/Async-Inn/Async-Inn/Async-Inn/Views/RoomAmenities/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9vbUFtZW5pdGllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kdkel/OneDrive/Documents/GitHub/Async-Inn/Async-Inn/Async-Inn/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/kdkel/OneDrive/Documents/GitHub/Async-Inn/Async-Inn/Async-Inn/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
